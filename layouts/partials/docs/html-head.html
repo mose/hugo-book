@@ -5,6 +5,8 @@
 
 {{- template "_internal/opengraph.html" . -}}
 
+{{- template "_internal/twitter_cards.html" . -}}
+
 <title>{{ partial "docs/title" . }} | {{ .Site.Title -}}</title>
 
 {{- $manifest := resources.Get "manifest.json" | resources.ExecuteAsTemplate "manifest.json" . }}
